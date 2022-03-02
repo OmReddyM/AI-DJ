@@ -27,6 +27,7 @@ function draw() {
     if (scoreRightWrist > 0.2) {
         numRightWristY = Math.floor(Number(rightWristY));
         speed = numRightWristY/200;
+        document.getElementById("speed").innerHTML = "Speed - " + speed;
         song.rate(speed);
     }
 }
